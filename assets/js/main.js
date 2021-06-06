@@ -22,8 +22,8 @@ function clearInput() {
 function createButtonErase(li) { 
     li.innerHTML += ' ';
     const buttonErase = document.createElement('button'); 
-    buttonErase.innerHTML = 'Apagar';
-    buttonErase.setAttribute('class', 'apagar') 
+    buttonErase.innerHTML = 'Delete';
+    buttonErase.setAttribute('class', 'delete') 
     li.appendChild(buttonErase); 
 }
 
@@ -43,7 +43,7 @@ buttonAddTask.addEventListener('click', function() {
 
 document.addEventListener('click', function(event) {
     const element = event.target;
-    if (element.classList.contains('apagar')) { 
+    if (element.classList.contains('delete')) { 
         element.parentElement.remove(); 
         salveTasks();
     }
@@ -55,7 +55,7 @@ function salveTasks() {
 
     for (let task of liTasks) {
         let taskText = task.innerText;
-        taskText = taskText.replace('Apagar', '').trim(); 
+        taskText = taskText.replace('Delete', '').trim(); 
         listOfTasks.push(taskText);
     }
     const tasksJSON = JSON.stringify(listOfTasks); 

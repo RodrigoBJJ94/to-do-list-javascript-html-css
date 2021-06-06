@@ -22,3 +22,10 @@ body{
     padding: 20px;
     border-radius: 10px;
 }
+.container h1 {
+    text-align: center;
+}
+.name {
+    color: white;
+    text-align: center;
+}

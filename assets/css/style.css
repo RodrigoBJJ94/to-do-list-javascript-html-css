@@ -3,10 +3,12 @@
 :root {
     --primary-color: rgb(48, 5, 48);
 }
+
 * {
     box-sizing: border-box;
     outline: 0;
 }
+
 body{
     margin: 0;
     padding: 0;
@@ -15,6 +17,7 @@ body{
     font-size: 1.3em;
     line-height: 1.5em;
 }
+
 .container {
     max-width: 640px;
     margin: 50px auto;
@@ -22,9 +25,11 @@ body{
     padding: 20px;
     border-radius: 10px;
 }
+
 .container h1 {
     text-align: center;
 }
+
 .name {
     color: white;
     text-align: center;
